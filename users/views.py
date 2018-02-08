@@ -3,6 +3,9 @@ from django.http import HttpResponse, JsonResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 
+def home(request):
+    return render(request, "home.html")
+
 def sign_up(request):
     return render(request, "sign_up.html")
 

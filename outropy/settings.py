@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users'
+    'rest_framework',
+    'scheduler',
+    'users',
+    'webapp',
 ]
 
 MIDDLEWARE = [
@@ -100,6 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
